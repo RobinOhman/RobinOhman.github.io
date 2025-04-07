@@ -8,7 +8,6 @@ div.container{
 	flex-direction: column;
 	background-color: #be92de;
 	margin: auto;
-	margin-bottom: 100px;
 	vertical-align: center;
 	justify-content: center;
 	align-items: center;
@@ -29,7 +28,7 @@ h2 {
 	color: #26084a;
 }
 h3 {
-	margin: 0;
+	margin: 0px;
 }
 div.content {
 	display: flex;
@@ -101,8 +100,10 @@ div.header{
 div.bottom{
 	display: flex;
 	height: 100px;
+	margin-top: 100px;
 	background-color: #6f428a;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 
 }
@@ -111,6 +112,7 @@ a{
 	color: #3d147a;
 	font-family: arial;
 	font-size: 12px;
+
 }
 a:hover{
 	color: #44158a;
