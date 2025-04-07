@@ -1,0 +1,141 @@
+body {
+	margin: auto;
+	background-color: #4d4154;
+	
+}
+div.container{
+	display: flex;
+	flex-direction: column;
+	background-color: #be92de;
+	margin: auto;
+	margin-bottom: 100px;
+	vertical-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	overflow:hidden;
+}
+h1 {
+	font-size: 50px;
+	color: #26084a;
+	justify-content: left;
+	margin: 20px;
+	flex: 5;
+}
+h2 {
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	color: #26084a;
+}
+h3 {
+	margin: 0;
+}
+div.content {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	padding: 10px;
+}
+div.projects {
+	display: flex;
+	flex-direction: column;
+	background-color: #be92de;
+	margin: 0;
+	vertical-align: top;
+	justify-content: top;
+	align-items: center;
+	border-radius: 10px;
+	overflow:hidden;
+}
+p{
+	line-height: 20px;
+	padding: 5px;
+	color: #26084a;
+	max-width: 250px;
+	margin: 0;
+}
+p.display{
+	line-height: 20px;
+	padding: 5px;
+	color: #26084a;
+	max-width: 600px;
+	margin: 0;
+}
+img{
+  display: block;
+  max-width: 350px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 25px;
+  
+}
+img.big{
+	display: block;
+	max-width: 600px;
+	max-height: 600px;
+	width: auto;
+	height: auto;
+	margin: 0;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 25px;
+}
+div.header{
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: #6f428a;
+	resize: none;
+
+
+}
+div.bottom{
+	display: flex;
+	height: 100px;
+	background-color: #6f428a;
+	justify-content: center;
+	width: 100%;
+
+}
+a{
+	text-decoration: none;
+	color: #3d147a;
+	font-family: arial;
+	font-size: 12px;
+}
+a:hover{
+	color: #44158a;
+}
+div.divider{
+	width: 75%;
+	padding: 2px;
+	margin: 2px;
+	border-radius: 2px;
+	background-color: #6f428a;
+	
+}
+img.icon{
+	display: flex;
+	flex: 1;
+	margin-left: auto;
+	margin-top: 15px;
+	max-width: 50px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+	justify-content: flex-end;
+	vertical-align: center;
+}
+div.filler{
+    flex-grow: 1;
+}
+
