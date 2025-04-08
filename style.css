@@ -151,6 +151,7 @@ div.divider{
 div.desc{
 	text-align: left;
 	min-width: 300px;
+	max-width: 500px;
 }
 img.icon{
 	display: flex;
