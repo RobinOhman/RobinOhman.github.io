@@ -43,6 +43,7 @@ h3 {
 div.content {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	text-align: center;
 	padding: 10px;
 	
