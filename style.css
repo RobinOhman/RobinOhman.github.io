@@ -144,10 +144,14 @@ a:hover{
 div.divider{
 	width: 75%;
 	padding: 2px;
-	margin: 2px;
+	margin: auto;
 	border-radius: 2px;
 	background-color: #6f428a;
 	
+}
+div.desc{
+	text-align: left;
+	min-width: 300px;
 }
 img.icon{
 	display: flex;
