@@ -12,28 +12,50 @@ div.container{
 	justify-content: center;
 	align-items: center;
 	overflow:hidden;
+	width: 100%;
+	height: 100%;
 }
 h1 {
+	display: inline-block;
 	font-size: 50px;
 	color: #26084a;
 	justify-content: left;
+	float: left;
 	margin: 20px;
-	flex: 5;
+	flex: 1;
+	width: 10em;
+	padding-left: 10px;
+	
+	
 }
 h2 {
 	text-align: center;
 	margin: 0;
 	font-size: 30px;
 	color: #26084a;
+	padding: 2px;
 }
 h3 {
-	margin: 0px;
+	margin: 2px;
+	line-height: 20px;
+	
 }
 div.content {
 	display: flex;
 	flex-direction: row;
 	text-align: center;
 	padding: 10px;
+	
+}
+div.contentholder {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 100px;
+	padding: 15px;
+	align-items: center;
+	background-color: #ae85cc;
+	border-radius: 15px;
 }
 div.projects {
 	display: flex;
@@ -43,8 +65,8 @@ div.projects {
 	vertical-align: top;
 	justify-content: top;
 	align-items: center;
-	border-radius: 10px;
 	overflow:hidden;
+	background-color: #ae85cc;
 }
 p{
 	line-height: 20px;
@@ -90,9 +112,9 @@ div.header{
 	width: 100%;
 	position: sticky;
 	top: 0;
-	z-index: 999;
 	background-color: #6f428a;
 	resize: none;
+	
 
 
 }
@@ -103,7 +125,7 @@ div.bottom{
 	background-color: #6f428a;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 100vw;
 
 }
 a{
@@ -127,7 +149,6 @@ div.divider{
 img.icon{
 	display: flex;
 	flex: 1;
-	margin-left: auto;
 	margin-top: 15px;
 	max-width: 50px;
 	max-height: 50px;
@@ -135,8 +156,44 @@ img.icon{
 	height: auto;
 	justify-content: flex-end;
 	vertical-align: center;
+
+	
+}
+img.icon:hover{
+	-webkit-filter: grayscale(100%);
+	transition: .5s ease;
+	filter: greyscale(100%);
 }
 div.filler{
     flex-grow: 1;
 }
+div.topnav{
+	display: flex;
+	flex-direction: row;
+}
+div.topnav a{
+	display: flex;
+	overflow: no-overflow;
+	flex: 1;
+	padding: 1em 2em;
+	vertical-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #26084a;
+	font-size: 30px;
+	min-width: 3em;
+	text-align: center;
+	
+	background: linear-gradient(to bottom right, #6f428a 50%, #be92de 50%); 
+	background-size: 200% 200%;
+	transition: .5s ease-out;
+	
+	
+}
+div.topnav a:hover{
+	background-position: bottom right;
+	
+
+}
+
 
