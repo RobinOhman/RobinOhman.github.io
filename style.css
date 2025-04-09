@@ -1,10 +1,27 @@
 body {
 	margin: auto;
-	background-color: #4d4154;
-	font-family: arial;
+	background-color: black;
+	font-family: verdana;
 	
 }
-div.container{
+html {
+  scroll-behavior: smooth;
+}
+section{
+	margin: 0 20px 0 20px;
+	display: flex;
+	flex: 1;
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: start;
+}
+.first{
+	background-color: #26084a;
+}
+.second{
+	background-color: #3C0E75;
+}
+.container{
 	display: flex;
 	flex-direction: column;
 	background-color: #be92de;
@@ -18,17 +35,16 @@ div.container{
 	height: 100%;
 }
 h1 {
-	display: inline-block;
+	display: flex;
 	font-size: 40px;
 	color: #26084a;
 	justify-content: left;
 	vertical-align: center;
-	float: left;
 	margin: 20px;
 	flex: 1;
-	width: 10em;
 	padding-left: 10px;
-	
+	color: white;
+	white-space: nowrap;
 	
 }
 h2 {
@@ -37,94 +53,121 @@ h2 {
 	font-size: 30px;
 	color: #26084a;
 	padding: 2px;
+	color: white;
 }
 h3 {
 	margin: 2px;
 	line-height: 30px;
+	color: white;
 	
 }
-div.content {
+.content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	max-width: 1000px
+	
+}
+.about{
 	display: flex;
 	flex-direction: row;
 	text-align: center;
 	padding: 10px;
+	max-width: 60vw;
 	
 }
-div.contentholder {
+.contentholder {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
+	max-width: 75vw;
 	margin-top: 100px;
+	margin-bottom: 100px;
 	padding: 15px;
 	align-items: center;
-	background-color: #ae85cc;
+	background-color: #3F145D;
 	border-radius: 15px;
+	
 }
-div.projects {
+.project {
 	display: flex;
 	flex-direction: column;
-	background-color: #be92de;
-	margin: 0;
+	margin: 20px;
 	vertical-align: top;
 	justify-content: top;
 	align-items: center;
 	overflow:hidden;
-	background-color: #ae85cc;
+	background-color: #26084a;
+	min-height: 450px;
+	
+	transition: .2s ease;
+	border: 2px #26084a solid;
+	border-radius: 15px;
 }
+.project:hover{
+	translate: 0% -5%;
+	background-color: #9456ba;
+	border: 2px white solid;
+	box-shadow: 0px 15px 5px 10px #2F1045;
+	transition: .5s ease;
+	
+}
+
 p{
 	line-height: 20px;
 	padding: 5px;
 	color: #26084a;
 	max-width: 250px;
 	margin: 0;
+	color: white;
 }
 p.display{
 	line-height: 20px;
 	padding: 5px;
-	color: #26084a;
+	color: white;
 	max-width: 600px;
 	margin: 0;
 }
 img{
-  display: block;
-  max-width: 350px;
-  max-height: 350px;
-  width: auto;
-  height: auto;
-  margin: 0;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 25px;
-  
-}
-img.big{
 	display: block;
-	max-width: 600px;
-	max-height: 600px;
+	max-width: 400px;
+	max-height: 400px;
 	width: auto;
 	height: auto;
 	margin: 0;
 	justify-content: center;
 	padding: 10px;
-	border-radius: 25px;
+	border-radius: 15px;
+  
 }
-div.header{
+img.big{
+	max-width: 600px;
+	max-height: 600px;
+	padding: 0px;
+	border: 2px solid black;
+}
+.header{
 	display: flex;
 	flex-direction: row;
 	height: 100px;
 	width: 100%;
 	position: sticky;
 	top: 0;
-	background-color: #6f428a;
+	background-color: #44158a;
 	resize: none;
 	text-align: center;
+	z-index: 999;
+	border-bottom: 2px solid black;
 
 }
-div.bottom{
+.bottom{
+	border-top: 2px solid black;
 	display: flex;
 	height: 100px;
-	margin-top: 100px;
-	background-color: #6f428a;
+	background-color: #44158a;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
@@ -132,30 +175,29 @@ div.bottom{
 }
 a{
 	text-decoration: none;
-	color: #3d147a;
-	font-family: arial;
+	color: white;
 	font-size: 12px;
 
 }
 a:hover{
 	color: #44158a;
 }
-div.divider{
-	width: 75%;
+.divider{
+	width: 90%;
 	padding: 2px;
 	margin: auto;
 	border-radius: 2px;
-	background-color: #6f428a;
+	background-color: #26084a;
 	
 }
-div.desc{
+.desc{
 	vertical-align: top;
 	text-align: left;
 	min-width: 300px;
-	max-width: 500px;
+	max-width: 600px;
 	margin-top: 20px;
 }
-img.icon{
+.icon{
 	display: flex;
 	flex: 1;
 	margin-top: 15px;
@@ -167,18 +209,19 @@ img.icon{
 	vertical-align: center;
 	transition: .5s ease;
 }
-img.icon:hover{
+.icon:hover{
 	transform: scale(1.2);
 	transition: .5s ease;
 }
-div.filler{
+.filler{
     flex-grow: 1;
 }
-div.topnav{
+.topnav{
 	display: flex;
 	flex-direction: row;
+	text-align: center;
 }
-div.topnav a{
+.topnav a{
 	display: flex;
 	overflow: no-overflow;
 	flex: 1;
@@ -186,21 +229,18 @@ div.topnav a{
 	vertical-align: center;
 	justify-content: center;
 	align-items: center;
-	color: #26084a;
 	font-size: 30px;
 	min-width: 3em;
-	text-align: center;
-	
-	background: linear-gradient(to bottom, #6f428a 50%, #be92de 50%); 
+
+	background: linear-gradient(to top, white 50%, #44158a 50%); 
 	background-size: 200% 200%;
-	transition: .5s ease-out;
+	transition: .2s ease-out;
 	
 	
 }
-div.topnav a:hover{
+.topnav a:hover{
+	color: #44158a;
 	background-position: bottom;
 	
 
 }
-
-
