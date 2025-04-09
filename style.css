@@ -2,10 +2,11 @@ body {
 	margin: auto;
 	background-color: black;
 	font-family: verdana;
-	
+
 }
 html {
   scroll-behavior: smooth;
+  
 }
 section{
 	margin: 0 20px 0 20px;
@@ -40,8 +41,8 @@ h1 {
 	vertical-align: center;
 	justify-content: center;
 	align-items: center;
-	margin: 10px;
-	flex: 1;
+	margin: 0px;
+	flex: 2;
 	color: white;
 	white-space: nowrap;
 	
@@ -59,6 +60,23 @@ h3 {
 	line-height: 30px;
 	color: white;
 	
+}
+h4{
+	font-size: 15px;
+	line-height: 1px;
+	color: white;
+	margin: 0;
+	padding: 0;
+	flex: 1;
+	
+}
+.banner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	vertical-align: bottom;
+	min-height: 100px;
+	height: auto;
 }
 .content {
 	display: flex;
@@ -132,6 +150,7 @@ p.display{
 	color: white;
 	max-width: 600px;
 	margin: 0;
+	font-weight: bold;
 }
 img{
 	display: block;
