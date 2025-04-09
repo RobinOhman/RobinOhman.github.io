@@ -75,6 +75,7 @@ h3 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	text-align: center;
+	justify-content: center;
 	padding: 10px;
 	max-width: 66vw;
 	
@@ -252,6 +253,7 @@ a:hover{
 .topnav a:hover{
 	color: #44158a;
 	background-position: bottom;
-	
-
+}
+.topnav a:active{
+	background-position: bottom;
 }
