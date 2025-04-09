@@ -36,13 +36,13 @@ section{
 }
 h1 {
 	display: flex;
-	font-size: 40px;
+	font-size: 1.6em;
 	color: #26084a;
-	justify-content: left;
 	vertical-align: center;
+	justify-content: center;
+	align-items: center;
 	margin: 20px;
 	flex: 1;
-	padding-left: 10px;
 	color: white;
 	white-space: nowrap;
 	
@@ -74,9 +74,10 @@ h3 {
 .about{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	text-align: center;
 	padding: 10px;
-	max-width: 60vw;
+	max-width: 66vw;
 	
 }
 .contentholder {
@@ -144,8 +145,11 @@ img{
   
 }
 img.big{
-	max-width: 600px;
-	max-height: 600px;
+	max-width: 50vw;
+	max-height: 50vh;
+	margin: auto;
+	width: auto;
+	height: auto;
 	padding: 0px;
 	border: 2px solid black;
 }
@@ -196,6 +200,7 @@ a:hover{
 	min-width: 300px;
 	max-width: 600px;
 	margin-top: 20px;
+	overflow: no-overflow;
 }
 .icon{
 	display: flex;
@@ -213,6 +218,10 @@ a:hover{
 	transform: scale(1.2);
 	transition: .5s ease;
 }
+.icon:active{
+	transform: scale(0.8);
+	transition: .5s ease;
+}
 .filler{
     flex-grow: 1;
 }
@@ -225,12 +234,12 @@ a:hover{
 	display: flex;
 	overflow: no-overflow;
 	flex: 1;
-	padding: 1em 1em;
+	padding: 0.5em 0.5em;
 	vertical-align: center;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
-	min-width: 3em;
+	font-size: 1.5em;
+	min-width: 1.5em;
 
 	background: linear-gradient(to top, white 50%, #44158a 50%); 
 	background-size: 200% 200%;
