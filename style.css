@@ -78,12 +78,13 @@ h4{
 }
 .banner{
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	align-items: center;
 	vertical-align: bottom;
 	min-height: 100px;
 	height: auto;
-	margin: 10px;
+
 }
 .content {
 	display: flex;
