@@ -7,7 +7,9 @@
 <body>
 	<div class="header">
 			<div class="topnav">
-				<h1>Robin Öhman Tejre</h1>
+				<div class="banner">
+				<h1>Robin Öhman Tejre<h4>Programmer</h4></h1>
+				</div>
 				<a href="index.html#1" target="_self">Projects</a>
 				<a href="index.html#2" target="_self">About me</a>
 			</div>
@@ -24,34 +26,33 @@
 			
 			<div class="divider"></div>
 				<p class="display">
-				Project duration: 3 weeks<br>
-				IDE: Visual Studio Code<br>
+				January 2025<br>
+				3 weeks<br>
+				Visual Studio Code<br>
 				Number of participants: 1<br>
 				School Assignment<br>
 				</p>
 				<div class="divider"></div>
 			</div>
 			<div class="about">
-			<img class="big" src="images/gameengine.gif">
+			<img class="big" src="images/GameEngine.png">
 					<div class="desc">
 						<p class="display">
-						A simple game engine I built in C++ for an assignment.
-						</p>
-						<p class="display">
-						It supports object creation, collision physics, sound, animation and custom key bindings.
-						It features simpleton patterns for textures to minimize the amount of SDL the user needs to interact with, while also preventing multiple instances of the same file being stored.
-						</p>
-						<p class="display">
+						A simple game engine I built in C++ for an assignment.<br>
+						<br>
+						It supports object creation, collision physics, sound, animation and custom key bindings.<br>
+						It features simpleton patterns for textures to minimize the amount of SDL the user needs to interact with, while also preventing multiple instances of the same file being stored.<br>
+						<br>
 						Since C++ doesn't have automatic garbage deletion, you would normally need to delete the sprites from each object individually when closing the game. I didn't like that however, which is why I went for
-						the simpleton approach. Using that I only need to delete one of each sprite at the end of the game, without checking every object for their sprites.
-						</p>
-						<p class="display">
+						the simpleton approach. Using that I only need to delete one of each sprite at the end of the game, without checking every object for their sprites.<br>
+						<br>
 						I also put a lot of effort into separating SDL2 from the game engine itself, as having the hypothetical "game developer" go through the process required to create a texture
-						every time felt very inefficient. That is why I designed it so that the developer only needs to enter the filename, and then let the texture manager do the rest.
-						It uses a Map that stores the textures, with the filepath string being the key. This allows it to check if the texture already exists when a new objects tries to use it.
-						</p>
-						<p class="display">
-						I used a similiar system for the renderer, so that every object could easily access it when needed.
+						every time felt very inefficient. That is why I designed it so that the developer only needs to enter the filename, and then let the texture manager do the rest.<br>
+						It uses a Map that stores the textures, with the filepath string being the key. This allows it to check if the texture already exists when a new objects tries to use it.<br>
+						<br>
+						I used a similiar system for the renderer, so that every object could easily access it when needed.<br>
+						<br>
+						Image shows a simple Space Invaders inspired game I built using it.
 						</p>
 					</div>
 					
