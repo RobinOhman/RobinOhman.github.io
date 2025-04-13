@@ -52,6 +52,7 @@
 					</div>
 					
 			</div>
+			<div class="divider"></div>
 			<div class="about">
 			
 			<div class="desc">
@@ -74,6 +75,7 @@
 			</div>
 			
 			</div>
+			<div class="divider"></div>
 			<div class="about">
 			<div class="banner">
 				<img class="big" src="images/gameengine/input.png">
@@ -92,7 +94,25 @@
 					</div>
 					
 			</div>
+			<div class="divider"></div>
+			<div class="about">
 			
+				<div class="desc">
+					<p class="display">
+					Collision physics are handled by checking where an object is going to be after applying it's own velocity<br>
+					<br>
+					After seeing where it's going to end up, it checks the position of every other game object position and colliders, and if any of them would overlap with it's own collider, it triggers both objects onCollision method and prevents the movement.<br>
+					Since onCollision is a virtual method, the developer can use it assign a custom behavior for it's game objects on collision. This allows for things like destroying it on collision or increasing the score.<br>
+					<br>
+					</p>
+				</div>
+				<div class="banner">
+					<img class="big" src="images/gameengine/physics.png">
+					<p class="display">
+					Collision code
+					</p>
+				</div>
+			</div>
 			
 		</div>
 			
